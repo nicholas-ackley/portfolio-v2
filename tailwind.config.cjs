@@ -13,15 +13,26 @@ export default {
       fontFamily: {
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
-      
+
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         pulseGlow: {
           "0%, 100%": { opacity: "0.4" },
           "50%": { opacity: "1" },
         },
+        blink: {
+          "0%, 50%, 100%": { opacity: "1" },
+          "25%, 75%": { opacity: "0" },
+        },
       },
+
       animation: {
+        fadeIn: "fadeIn .2s ease-in forwards",
         glow: "pulseGlow 4s ease-in-out infinite",
+        blink: "blink 1s step-start infinite",
       },
     },
   },
