@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Terminal from "../components/container/Terminal";
 import { motion, AnimatePresence } from "framer-motion";
 
