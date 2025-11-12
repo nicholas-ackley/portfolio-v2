@@ -25,19 +25,19 @@ const Projects = () => {
 
   const projects = [
     {
-      name: "@nick/greekpop",
-      description: "College Resale Marketplace for Greek life apparel.",
+      name: "@nick/hackathon-toytota",
+      description: "Developed a web app using Python ML model that predicts user car preferences using vehicle and demographic data, implementing a Multinomial Logit regression with L2 regularization through scikit-learn.",
       activity: 35,
       lastActivity: "2 days ago",
-      github: "github.com/nickackley/GreekPop",
+      github: "github.com/nicholas-ackley/hack-utd-toyota",
       featured: true,
       details: {
         topics: "React Native, Firebase, TypeScript",
         language: "TypeScript",
         issues: 3,
-        created: "4 months ago",
-        clone: "github.com/nickackley/GreekPop.git",
-        homepage: "greekpop.app",
+        created: "2 days ago",
+        clone: "github.com/nicholas-ackley/hack-utd-toyota",
+        homepage: "Deploying soon...",
       },
     },
     {
@@ -45,14 +45,14 @@ const Projects = () => {
       description: "Spotify dashboard showing top songs and listening stats.",
       activity: 80,
       lastActivity: "1 week ago",
-      github: "github.com/nickackley/SpotifySummary",
+      github: "github.com/nicholas-ackley/spotify",
       featured: false,
       details: {
         topics: "React, Node.js, Spotify API",
         language: "JavaScript",
         issues: 1,
         created: "6 months ago",
-        clone: "github.com/nickackley/SpotifySummary.git",
+        clone: "github.com/nickackley/Spotify.git",
         homepage: "spotifywrappedv2.app",
       },
     },
@@ -61,7 +61,7 @@ const Projects = () => {
       description: "NBA data analysis dashboard for player performance.",
       activity: 85,
       lastActivity: "5 days ago",
-      github: "github.com/nickackley/OKC-Thunder-Analytics",
+      github: "github.com/nicholas-ackley/OKC-Thunder",
       featured: true,
       details: {
         topics: "Angular, Django, PostgreSQL",
@@ -77,7 +77,7 @@ const Projects = () => {
       description: "My first personal web portfolio showcasing projects and skills.",
       activity: 100,
       lastActivity: "Just now",
-      github: "https://github.com/nicholas-ackley/website",
+      github: "github.com/nicholas-ackley/website",
       featured: false,
       details: {
         topics: "React, TypeScript, TailwindCSS, Framer Motion",

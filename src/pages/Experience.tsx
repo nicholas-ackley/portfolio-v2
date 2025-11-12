@@ -40,32 +40,20 @@ const Experience = () => {
       featured: true,
       link: "https://traverconnect.com/",
     },
+
     {
-      company: "Hackathon Project 2025",
-      role: "Hackathon Project",
-      duration: "Oct 2025",
-      description: [
-        "Developed an NBA analytics dashboard during a 48-hour hackathon.",
-      ],
-      tech: "Angular, Django, PostgreSQL, REST API, JSON",
-      achievements: [
-        "Built real-time player performance tracking with interactive graphs.",
-      ],
-      featured: true,
-      link: "https://github.com/your-hackathon-project",
-    },
-    {
-      company: "GreekPop",
+      company: "Bloomsky",
       role: "Founder / Developer",
       duration: "2025 – Present",
       description: [
-        "Building a Depop-style resale marketplace for Greek apparel.",
-        "Developing authentication and listing APIs with Firebase and Expo.",
-        "Managing deployment, design, and community onboarding.",
+        "Skyfarm is a calm, Stardew inspirted RPG game set high above the clouds. You’ve inherited a small floating ",
+        "island and must transform it into a thriving farm suspended in the sky. With nothing but your glider,", 
+        "a handful of seeds, and your curiosity, you’ll explore neighboring islands, collect rare resources, ",
+        " and farm crops that grow differently depending on altitude and weather. Who knows, you might meet a friend or two along the way!",
       ],
-      tech: "React Native, Firebase, Expo, APIs",
+      tech: "C#, Godot Engine, Asperite,",
       achievements: [
-        "Launching private beta for Texas Greek organizations in Spring 2026.",
+        "IN PROGRESS...",
       ],
       featured: false,
       link: "https://github.com/nicholas-ackley/greek-pop",

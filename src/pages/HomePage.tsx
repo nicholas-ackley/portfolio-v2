@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
+import TerminalOne from "../components/container/TerminalContent";
 
 export default function HomePage() {
   const [whoamiText, setWhoamiText] = useState("");
@@ -33,9 +34,9 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="text-lg flex items-center justify-center min-h-screen bg-hackerDark text-hackerGreen font-mono overflow-hidden">
+    <div className="text-lg flex items-center justify-center min-h-screen p-20 bg-hackerDark text-hackerGreen font-mono overflow-hidden">
       {/* Outer hacker terminal window */}
-      <div className="relative w-[1450px] h-[925px] bg-black/80 border-[2px] border-hackerGreen flex flex-col">
+      <div className="relative w-[1450px] h-[825px] bg-black/80 border-[2px] border-hackerGreen flex flex-col">
 
         {/* Top strip */}
         <div className="h-[26px] w-full bg-hackerGreen"></div>
@@ -49,7 +50,7 @@ export default function HomePage() {
             {/* whoami typing animation */}
             <p className="mb-2 whitespace-pre">
               {whoamiText}
-              <span className="animate-blink">_</span>
+              <span className="animate-blink p-2">_</span>
             </p>
 
             {/* Sequential Fade-Ins */}
@@ -70,7 +71,7 @@ export default function HomePage() {
               <div className="animate-fadeIn">
                 <p className="mb-2">$ ls skills/</p>
                 <p className="indent-8 mb-6">
-                  /TypeScript /React /Python /FastAPI /Java /SQL /MongoDB
+                  /TypeScript /React /Python /FastAPI /Java /SQL /Pandas
                 </p>
               </div>
             )}
@@ -82,25 +83,29 @@ export default function HomePage() {
                   <p>Location: Dallas, TX</p>
                   <p>Currently: Building projects and expanding my portfolio</p>
                   <p>Studies - University of Texas at Dallas</p>
+                  <p>Grade - Senior</p>
                   <p>
-                    Side-Project: Building{" "}
-                    <span className="text-hackerGreen/80">GreekPop</span>
+                    Side-Project: Game Development{" with"}
+                    <span className="text-hackerGreen/80"> Godot Engine</span>
                   </p>
                 </div>
               </div>
             )}
 
-            {resumeVisible && (
-              <div className="animate-fadeIn">
-                <p className="mb-2">$ wget resume</p>
-                <a
-                  href="#"
-                  className="indent-8 underline text-hackerGreen hover:text-hackerGreen/70"
-                >
-                  nicholasackley.pdf
-                </a>
-              </div>
-            )}
+{resumeVisible && (
+  <div className="animate-fadeIn">
+    <p className="mb-2 p-2">$ wget resume</p>
+    <a
+      href="/nicholasackley.pdf" // 👈 put your actual resume file here (e.g. public/resume.pdf)
+      download="Nicholas_Ackley_Resume.pdf" // 👈 sets the download filename
+      className="indent-8 underline text-hackerGreen hover:text-hackerGreen/70"
+    >
+      nicholasackley.pdf
+    </a>
+    <TerminalOne />
+  </div>
+)}
+
 
             <div className="h-[400px]" />
           </div>

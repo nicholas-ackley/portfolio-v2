@@ -2,7 +2,7 @@ import Navbar from "../../navbar/Navbar";
 
 export default function Terminal({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-lg flex items-center justify-center min-h-screen bg-hackerDark text-hackerGreen font-mono overflow-hidden">
+    <div className="text-lg flex items-center justify-center min-h-screen bg-hackerDark text-hackerGreen font-mono overflow-hidden p-20">
       {/* Outer hacker terminal window */}
       <div className="relative w-[1450px] h-[925px] bg-black/80 border-[2px] border-hackerGreen flex flex-col">
         
